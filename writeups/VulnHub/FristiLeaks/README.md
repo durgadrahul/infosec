@@ -99,6 +99,20 @@ So we try to spawn a bash shell first, and try logging in with username `fristig
 ![fristigod_access2.png](fristigod_access2.png)
 
 **Step 12:**
+We look for files present in `/home/fristigod` and `/var/fristigod` for presence of entrypoints to get root access.
+![fristigod_activity1.png](fristigod_activity1.png)
+
+We take a look at the file .bash_history. Seems that a lot of sudo activity has been undertaken by this user.
+![fristigod_activity2.png](fristigod_activity2.png)
+
+**Step 13:**
+Looks like `doCom` file is binary. Let us try to execute it.
+![root_access.png](root_access.png)
+
+**Step 14:**
+Final Step is to capture the flag. Having obtained root access, we visit the `/root` folder. There we find the `fristileaks_secrets.txt`. Upon checking its contents, we confirm that is the flag.
+![capture_flag.png](capture_flag.png)
+
 
 
   
