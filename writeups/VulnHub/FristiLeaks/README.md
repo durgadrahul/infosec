@@ -34,7 +34,7 @@ Continuing the exploration we view the page source. There are some comments whic
 
 > echo "base64 code" | base64 --decode > evidence.png 
 
-[evidence.png](evidence.png)
+![evidence.png](evidence.png)
 
 Once decoded to the .png format, the text in the .png file is found.
 There is also a note in the page source, written by someone named "eezeepz".
@@ -57,6 +57,8 @@ On the local machine, we use netcat to listen to port 443
 Also visit http://192.168.1.28/fristi/uploads/shell.php.png
 
 Remote access will be established when the shell.php.png executes
+
+![reverse_tcp.png](reverse_tcp.png)
   
 **Step 8:**
 
