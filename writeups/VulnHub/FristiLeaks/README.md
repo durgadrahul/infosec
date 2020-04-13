@@ -15,13 +15,13 @@ Turn on the Target Machine. Machine IP is found to be 192.168.1.28
 
 **Step 2:**
 Run NMap to scan target machine for open ports. 
-  > nmap -sC 192.168.1.28
+> nmap -sC 192.168.1.28
 
 Port 80 is found open.
 
 **Step 3:**
 Run nikto or Burp Suite Spider on http://192.168.1.28/ to locate any points of vulnerabilities.
-  > nikto -h http://192.168.1.28/
+> nikto -h http://192.168.1.28/
 
 Found robots.txt. It has entries for /cola, /sisi and  /beer. All 3 pages are dead end.
 
@@ -52,7 +52,7 @@ We rename the file as shell.php.png so that it can be uploaded without error.
 
 **Step 7:**
 On the local machine, we use netcat to listen to port 443
-  > nc -lvp 443
+> nc -lvp 443
 
 Also visit http://192.168.1.28/fristi/uploads/shell.php.png
 
@@ -67,9 +67,19 @@ First we will explore the home directory for the user "eezeepz"
 We find a file notes.txt which looks interesting
 ![eezeepz_notes.png](eezeepz_notes.png)
 
-**Step 9:**
+This means any command in `/tmp/runthis` would get executed. We will write commands to this file to get access to `/home/admin`
 
-  
+**Step 9:**
+To obtain access to `/home/admin` we need to change its access privileges
+> chmod -R 777 /home/admin
+
+We come across this error `command did not start with /home/admin or /usr/bin`
+
+To bypass this we will use the following command
+> echo "/home/admin/chmod -R 777 /home/admin" . /tmp/runthis
+
+To check whether we get admin access, try `cd /home/admin`. We should see the following image.
+![admin_access.png](admin_access.png)
   
 
 
