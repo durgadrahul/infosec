@@ -61,6 +61,13 @@ Remote access will be established when the shell.php.png executes
 ![reverse_tcp.png](reverse_tcp.png)
   
 **Step 8:**
+First we will explore the home directory for the user "eezeepz"
+> cd /home/eezeepz
+
+We find a file notes.txt which looks interesting
+![eezeepz_notes.png](eezeepz_notes.png)
+
+**Step 9:**
 
   
   
