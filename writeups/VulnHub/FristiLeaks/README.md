@@ -80,6 +80,27 @@ To bypass this we will use the following command
 
 To check whether we get admin access, try `cd /home/admin`. We should see the following image.
 ![admin_access.png](admin_access.png)
+
+**Step 10:**
+We come across several files
+- `cryptpass.py` - A python script to perform some kind of encryption
+- `cryptedpass.txt` - Contains some encrypted text
+- `whoisyourgodnow.txt` - Contains some encrypted text
+
+We write a python script to reverse the encryption in `cryptpass.py` called [decryptpass.py](decryptpass.py)
+We run this script for the encrypted texts obtained above and get the follwing results.
+![decrypted_pass.png](decrypted_pass.png)
+
+**Step 11:**
+When trying to login to `fristigod` we get the following message
+![fristigod_access1.png](fristigod_access1.png)
+
+So we try to spawn a bash shell first, and try logging in with username `fristigod` and password `LetThereBeFristi!`
+![fristigod_access2.png](fristigod_access2.png)
+
+**Step 12:**
+
+
   
 
 
