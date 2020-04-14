@@ -44,7 +44,7 @@ We observe the `wp-content` folder present, which indicates the presence of word
 **Step 5:**
 We guess the credentials for this login page. We observe that the error message is different when the username is guessed correctly. We try various default usernames, or names of characters from the TV show Mr. Robot.
 
-We find that 'Elliot' is one of the correct usernames. To guess the password, we think of using the `fsocity.dic` file as a wordlist to bruteforce the password.
+We find that 'elliot' is one of the correct usernames. To guess the password, we think of using the `fsocity.dic` file as a wordlist to bruteforce the password.
 
 Using BurpSuite Intruder or WPScan to bruteforce the password, we find the password to be `ER28-0652`
 > wpscan --url http://192.168.1.51/wp-login.php --passwords fsocity.dic --usernames 'elliot'
