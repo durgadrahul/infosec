@@ -32,4 +32,8 @@ Explore http://192.168.1.16/. There are several links. We observe that the URL c
 This means that the website is susceptible to LFI (Local File Inclusion) Attack. We will exploit this vulnerability to get content of other files. 
 
 Changing the URL to `http://192.168.1.16/?page=php://filter/convert.base64-encode/resource=config` will fetch us the base64 encoded content of the file `config.php`
-![lfi_config.php](lfi_config.php)
+![lfi_config.png](lfi_config.png)
+
+These are the credentials for MySQL server on http://192.168.1.16/
+
+**Step 4:**
