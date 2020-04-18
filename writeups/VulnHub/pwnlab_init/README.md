@@ -78,6 +78,9 @@ On exploring several other options, we come across `/index.php` which uses a `la
 We can use this `lang` cookie to execute the `shell.gif` script. Enabling TamperData browser extension, we visit `http://192.168.1.16/?page=index.php`. The TamperData prompt opens the request for us to tamper with. 
 ![tamper_request.png](tamper_request.png)
 
+Once we submit the tampered request, the script executes and we observe that the reverse TCP connection has been established.
+![reverse_tcp.png](reverse_tcp.png)
+
 **Step 8:**
 
 
