@@ -54,7 +54,7 @@ Login Successful!
 **Step 6:**
 Once inside, we have to find an entry point to generate a reverse TCP connection between the target and attacker machine. We can use one of the Appearance Theme PHP pages to carry the payload of the attack.
 
-Using the [php_reverse_shell.php](php_reverse_shell.php) in /usr/share/webshells/php folder, we use this script as payload content. In this script we change the IP Address to your IP (Attacker's IP) and port number 4444 to listen incoming traffic on.
+Using the [php_reverse_shell.php](php_reverse_shell.php) in `/usr/share/webshells/php` folder, we use this script as payload content. In this script we change the IP Address to your IP (Attacker's IP) and port number 4444 to listen incoming traffic on.
 
 **Step 7:**
 On the local machine, we use netcat to listen to port 443
