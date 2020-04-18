@@ -24,7 +24,7 @@ Run NMap to scan target machine for open ports.
 Port 80 is found open.
 
 **Step 3:**
-Run nikto or Burp Suite Spider on http://192.168.1.51/ to locate any points of vulnerabilities.
+Run nikto or Burp Suite Spider on `http://192.168.1.51/` to locate any points of vulnerabilities.
 > nikto -h http://192.168.1.51/
 
 Found robots.txt. It has entries for `fsocity.dic` and `key-1-of-3.txt`. Lets download them with the following commands.
@@ -36,7 +36,7 @@ Found robots.txt. It has entries for `fsocity.dic` and `key-1-of-3.txt`. Lets do
 `fsocity.dic` contains random words, which would indicate that its a wordlist
 
 **Step 4:**
-Run `dirbuster` on http://192.168.1.51. It would list out the files/folders on the webserver. 
+Run `dirbuster` on `http://192.168.1.51`. It would list out the files/folders on the webserver. 
 ![dirbuster_output.png](dirbuster_output.png)
 
 We observe the `wp-content` folder present, which indicates the presence of wordpress component. We explore further to find the login page as well. `http://192.168.1.51/wp-login.php`
@@ -60,7 +60,7 @@ Using the [php_reverse_shell.php](php_reverse_shell.php) in /usr/share/webshells
 On the local machine, we use netcat to listen to port 443
 > nc -lvp 443
 
-Also visit http://192.168.1.51/themes/404.php
+Also visit `http://192.168.1.51/themes/404.php`
 
 Remote access will be established when the shell.php.png executes
 
