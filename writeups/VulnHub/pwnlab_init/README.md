@@ -37,3 +37,15 @@ Changing the URL to `http://192.168.1.16/?page=php://filter/convert.base64-encod
 These are the credentials for MySQL server on http://192.168.1.16/
 
 **Step 4:**
+Once the MySQL credentials are obtained, we login to MySQL Server using those credentials
+![mysql_access.png](mysql_access.png)
+
+We explore the MySQL database tables, and check the `users` table for critical information.
+![mysql_users.png](mysql_users.png)
+
+We have obtained user credentials which can be used to login to the web application. They are base64 encoded, and after decoding store them in [users.txt](users.txt) file.
+
+Using one of the user credentials `kent`, we login to the application.
+
+**Step 5:**
+
