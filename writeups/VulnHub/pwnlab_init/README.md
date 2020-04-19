@@ -84,6 +84,7 @@ Once we submit the tampered request, the script executes and we observe that the
 
 **Step 8:**
 Once inside, we explore around in the `/home` folder and subfolders. We observe we cannot switch users to `kane`, `mike`, `kent` either. We spawn a bash prompt and try again.
+
 ![user_access.png](user_access.png)
 
 We have logged in as Kane.
