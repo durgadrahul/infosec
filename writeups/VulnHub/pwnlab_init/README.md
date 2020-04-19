@@ -102,7 +102,14 @@ We have logged in as Mike.
 Once we are inside, we can reset the value of PATH variable to its previous value. 
 
 **Step 10:**
+Once inside, we explore around and find new leads in `/home/mike` folder. This time it is a executable file names `msg2root`.
+We find the following information about the file.
 
+![msg2root_strings.png](msg2root_strings.png)
+
+We observe that the file accepts input, and then writes it to `/home/root/messages.txt`. Since no input validation seems to be present, we try the Command Injection Attack, to spawn a shell prompt, this time with root access.
+
+![root_access.png](root_access.png)
 
 
 
