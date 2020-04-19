@@ -111,5 +111,13 @@ We observe that the file accepts input, and then writes it to `/home/root/messag
 
 ![root_access.png](root_access.png)
 
+**Step 11:**
+Once inside, we explore around to capture the flag. We find `flag.txt` in the `/root` folder. 
+
+![flag_capture.txt](flag_capture.txt)
+
+We have CAPTURED the FLAG!!!
+
+
 
 
