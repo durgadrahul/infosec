@@ -90,5 +90,19 @@ Once inside, we explore around in the `/home` folder and subfolders. We observe 
 We have logged in as Kane.
 
 **Step 9:**
+We explore `/home/kane` folder to find the `msgmike` file. It is an executable which makes a `cat` command call without sufficient permissions to get executed. This command can be exploited by affecting the order in which the OS searches paths
+to find and execute a binary.
+
+We will create a tampered version of `cat` command. We will use it to spawn a shell `/bin/sh` prompt and provision it with `mike`'s privileges. And then we will trick the OS to run this tampered version by changing the value of PATH variable.
+
+![user_access2.png](user_access2.png)
+
+We have logged in as Mike.
+
+Once we are inside, we can reset the value of PATH variable to its previous value. 
+
+**Step 10:**
+
+
 
 
