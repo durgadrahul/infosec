@@ -12,10 +12,10 @@ Kali is being hosted on VM Workstation. OpenAdmin is a server hosted by HackTheB
 # WalkThrough
 
 **Step 1:**
-Connect to the Target Machine via VPN connection file issued by HackTheBox. Target Machine IP found to be `192.168.1.51`
+Connect to the Target Machine via VPN connection file issued by HackTheBox. Target Machine IP found to be `10.10.10.171`
 
 Run NMap to scan target machine for open ports. 
-> nmap -sC 192.168.1.51
+> nmap -sC 10.10.10.171
 
 Port 80 is found open.
 
