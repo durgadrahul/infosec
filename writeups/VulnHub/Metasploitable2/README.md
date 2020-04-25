@@ -16,3 +16,30 @@ Turn on the Target Machine. Run netdiscover on local machine (Attacker's) on int
 > netdiscover -i eth0
 
 Target Machine IP found to be `192.168.1.39`
+
+**Step 2:**
+Run NMap to scan target machine for open ports. 
+> nmap -sC 192.168.1.39
+
+Port 21 is found open. This is the port for FTP protocol.
+
+## Rooting VM using port 21
+**Step 3:**
+Metasploit has an exploit for the vsftpd version 2.3.4. We start the msfconsole using the following command
+
+> msfconsole
+
+Once inside the Metasploit framework, we search for the `vsftpd` exploit.
+
+![vsftpd_config.png](vsftpd_config.png)
+
+Once configured, we run the exploit.
+
+![vsftpd_exploit.png](vsftpd_exploit.png)
+
+ROOT Access established !!!
+
+
+**Step 4:**
+
+
