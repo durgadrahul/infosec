@@ -18,3 +18,9 @@ Turn on the Target Machine. Run netdiscover on local machine (Attacker's) on int
 Target Machine IP found to be `192.168.1.24`
 
 **Step 2:**
+Run NMap to scan target machine for open ports. 
+> nmap -sC 192.168.1.24
+
+Ports found open: 22, 80, 111, 139, 443, 1024
+
+**Step 3:**
