@@ -23,7 +23,7 @@ Run NMap to scan target machine for open ports.
 
 Port 21 is found open. This is the port for FTP protocol.
 
-## Rooting VM using port 21
+### Rooting VM using port 21 (Vsftpd vulnerability)
 **Step 3:**
 Metasploit has an exploit for the vsftpd version 2.3.4. We start the msfconsole using the following command
 
@@ -39,7 +39,20 @@ Once configured, we run the exploit.
 
 ROOT Access established !!!
 
-
+### Rooting VM using port 21 (Default Anonymous Configuration)
 **Step 4:**
+FTP servers allow anonymous connections by default. An attacker can verify this by using an auxiliary exploit from Metasploit Framework, as illustrated below.
+
+![msf_ftp_anon.png](msf_ftp_anon.png)
+
+Once establised that anonymous user can READ from the FTP Server, attacker can use WinScp program to read files using its UI.
+
+![scp_ftp_anon.png](scp_ftp_anon.png)
+
+
+**Step 5:**
+
+
+
 
 
