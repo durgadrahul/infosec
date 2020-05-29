@@ -1,4 +1,4 @@
-# Summary
+# Summary (INCOMPLETE)
 This document will walk you through the procedure (step-by-step) to root the machine Kioptrix Level 1.
 The Goal is to gain "root" access in the target machine.
 
