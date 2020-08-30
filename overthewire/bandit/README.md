@@ -39,6 +39,12 @@ Read hidden files in `inhere` folder.
 Read content of `.hidden` file in `inhere` folder. Password for next level is `pIwrPrtPN36QITSp3EQaw936yaFoFgAB`.
 
 **Level 5:**
+> ssh bandit4@bandit.labs.overthewire.org -p 2220
+
+Password is `pIwrPrtPN36QITSp3EQaw936yaFoFgAB`. Inside the `inhere` folder, locate the 10 files. Since they are unreadable, run  the following command.
+> find . -type f -exec sh -c 'file -b {} | grep text &>/dev/null' \; -print
+
+Read each file, to find human-readable content. File07 has the content `koReBOKuIDDepwhWk7jZC0RTdopnAYKh`.
 
 
 
