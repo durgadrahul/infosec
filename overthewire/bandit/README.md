@@ -21,6 +21,24 @@ Password for the next level is `CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9`.
 
 **Level 3:**
 
+> ssh bandit2@bandit.labs.overthewire.org -p 2220
+
+Enter password as `CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9`.
+
+Read contents of `spaces in this filename`, which is `UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK`.
+
+**Level 4:**
+
+> ssh bandit3@bandit.labs.overthewire.org -p 2220
+
+Password is `UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK`/
+
+Read hidden files in `inhere` folder.
+> ls -a
+
+Read content of `.hidden` file in `inhere` folder. Password for next level is `pIwrPrtPN36QITSp3EQaw936yaFoFgAB`.
+
+**Level 5:**
 
 
 
