@@ -1,0 +1,1 @@
+Source : https://www.thepythoncode.com/article/sql-injection-vulnerability-detector-in-python

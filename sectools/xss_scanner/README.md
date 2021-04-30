@@ -1,0 +1,1 @@
+Source : https://www.thepythoncode.com/article/make-a-xss-vulnerability-scanner-in-python
